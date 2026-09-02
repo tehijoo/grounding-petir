@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  /* Abu-navy (primary) & Navy gelap (primary-dark) — struktur & heading (tema "Mentary") */
-  --color-primary: #2e3b4e;
-  --color-primary-dark: #0a0f1a;
-  --color-primary-light: #5c6b80;
+  /* Hijau teal (primary) & teal gelap (primary-dark) — struktur & heading, tema "hijau stabilo" klien */
+  --color-primary: #2c7a68;
+  --color-primary-dark: #12332b;
+  --color-primary-light: #4fa189;
 
-  /* Coklat muda — aksen premium */
-  --color-secondary: #a3785f;
-  --color-secondary-dark: #8a624c;
+  /* Hijau segar — aksen "stabilo" */
+  --color-secondary: #5fa34c;
+  --color-secondary-dark: #4c8a3b;
 
-  /* Netral sejuk, dekat putih */
-  --color-neutral-bg: #f7f9fc;
-  --color-neutral-text: #33475b;
+  /* Latar halaman putih; permukaan kartu/grid pakai krem hijau pucat */
+  --color-neutral-bg: #ffffff;
+  --color-surface: #f7fadd;
+  --color-neutral-text: #26352e;
 
   /* Tipografi */
   --font-heading: var(--font-poppins), var(--font-inter), sans-serif;
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5,
 }
 
 .text-brand-gradient {
-  background-image: linear-gradient(90deg, var(--color-secondary) 0%, #d4b9a2 50%, var(--color-secondary-dark) 100%);
+  background-image: linear-gradient(90deg, var(--color-secondary) 0%, #a7d2c9 50%, var(--color-secondary-dark) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

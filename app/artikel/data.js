@@ -1,26 +1,26 @@
 export const articles = [
   {
     id: 1,
-    slug: 'pasang-kanopi-membran-cibubur',
-    title: 'Pasang Kanopi Membran di Cibubur',
-    date: '3 Mei 2026',
-    excerpt: 'Kanopi atap membrane kini menjadi salah satu pilihan paling populer untuk berbagai kebutuhan bangunan modern, termasuk proyek pemasangan yang telah kami kerjakan di kawasan Cibubur, Jakarta.',
-    image: '/images/2.jpeg'
+    slug: 'perbedaan-penangkal-petir-konvensional-elektrostatis',
+    title: 'Perbedaan Penangkal Petir Konvensional & Elektrostatis',
+    date: '20 Agustus 2026',
+    excerpt: 'Sebelum memasang penangkal petir, penting untuk memahami perbedaan sistem konvensional dan elektrostatis agar sesuai dengan kebutuhan bangunan Anda.',
+    image: '/images/gallery/10.jpg',
   },
   {
     id: 2,
-    slug: 'jasa-pembuatan-kanopi-profesional',
-    title: 'Jasa Pembuatan Kanopi Profesional',
-    date: '15 April 2026',
-    excerpt: 'Memilih jasa pembuatan kanopi yang profesional sangat penting untuk memastikan ketahanan dan estetika bangunan Anda. Berikut tips memilihnya.',
-    image: '/images/15.jpeg'
+    slug: 'tips-memilih-jasa-pasang-penangkal-petir',
+    title: 'Tips Memilih Jasa Pasang Penangkal Petir yang Tepat',
+    date: '10 Juli 2026',
+    excerpt: 'Memilih jasa pemasangan penangkal petir yang tepat sangat penting untuk memastikan keamanan dan efektivitas perlindungan bangunan Anda dari sambaran petir.',
+    image: '/images/gallery/4.jpg',
   },
   {
     id: 3,
-    slug: 'kanopi-membran-masjid-sekolah',
-    title: 'Kanopi Membran untuk Masjid & Sekolah',
-    date: '7 Maret 2026',
-    excerpt: 'Kanopi membrane tidak hanya cocok untuk hunian pribadi, tapi juga ideal untuk fasilitas publik seperti masjid dan sekolah yang membutuhkan area teduh yang luas.',
-    image: '/images/9.jpeg'
-  }
+    slug: 'pentingnya-tes-grounding-sistem-pembumian',
+    title: 'Pentingnya Tes Grounding (Sistem Pembumian) yang Benar',
+    date: '25 Juni 2026',
+    excerpt: 'Sistem grounding atau pembumian yang diuji dengan benar adalah kunci utama agar instalasi penangkal petir bekerja secara maksimal.',
+    image: '/images/gallery/9.jpg',
+  },
 ];

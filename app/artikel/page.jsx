@@ -4,8 +4,8 @@ import { articles } from './data';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Artikel & Blog – CV. Buana Teknikal Pratama',
-  description: 'Kumpulan artikel dan informasi terbaru seputar kanopi atap membrane dan tips perawatannya.',
+  title: 'Artikel & Blog – Tema Grounding Petir',
+  description: 'Kumpulan artikel dan informasi seputar penangkal petir, sistem grounding, dan tips perawatannya.',
 };
 
 export default function ArtikelPage() {
@@ -18,7 +18,7 @@ export default function ArtikelPage() {
         <div className="relative z-10">
           <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Blog</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog &amp; Artikel</h1>
-          <p className="text-white/60 text-lg font-medium">Informasi, Tips, dan Update Terbaru dari CV. Buana Teknikal Pratama</p>
+          <p className="text-white/60 text-lg font-medium">Informasi, Tips, dan Update Terbaru dari Tema Grounding Petir</p>
         </div>
       </section>
 
@@ -30,13 +30,14 @@ export default function ArtikelPage() {
             <ScrollReveal direction="up" delay={index * 0.1} key={article.id}>
               <Link
                 href={`/artikel/${article.slug}`}
-                className="group block border border-primary/10 hover:border-secondary rounded-2xl overflow-hidden transition-colors duration-300 h-full"
+                className="group block border border-primary/20 hover:border-secondary hover:shadow-md rounded-2xl overflow-hidden transition-all duration-300 h-full"
               >
                 <div className="relative w-full h-56 overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                    style={{ backgroundImage: `url('${article.image}')` }}
-                  ></div>
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
                 </div>
 
                 <div className="p-8 flex flex-col">
@@ -53,7 +54,7 @@ export default function ArtikelPage() {
                     {article.excerpt}
                   </p>
 
-                  <div className="mt-auto flex items-center text-primary font-semibold text-sm group-hover:text-secondary transition-colors duration-300 gap-2 pt-4 border-t border-primary/10">
+                  <div className="mt-auto flex items-center text-primary font-semibold text-sm group-hover:text-secondary transition-colors duration-300 gap-2 pt-4 border-t border-primary/20">
                     Read More
                     <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </div>

@@ -17,8 +17,17 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'CV. Buana Teknikal Pratama | Jasa Instalasi Kanopi Membrane & Alderon',
-  description: 'Spesialis instalasi kanopi atap membrane dan kanopi alderon sejak tahun 2000. Melayani proyek instansi pemerintah, korporasi, hingga hunian pribadi di seluruh Indonesia.',
+  title: 'Tema Grounding Petir | Jasa Penjualan & Pemasangan Penangkal Petir',
+  description: 'Penjualan & pemasangan penangkal petir konvensional dan elektrostatis, terpercaya se-Indonesia. Mekanik berpengalaman, garansi produk 2 tahun, operator ready 24 jam.',
+  keywords: [
+    'penangkal petir', 'pasang penangkal petir', 'jasa penangkal petir', 'jasa pasang penangkal petir',
+    'anti petir', 'pasang anti petir', 'toko penangkal petir', 'penangkal petir jakarta',
+    'penangkal petir banten', 'penangkal petir bekasi', 'penangkal petir bogor', 'penangkal petir depok',
+    'pasang penangkal petir jawa barat', 'harga penangkal petir', 'harga pasang penangkal petir',
+    'biaya pasang penangkal petir', 'jasa pasang surge arrester', 'instalasi grounding sistem',
+    'jual penangkal petir', 'penangkal petir murah', 'penangkal petir rumah', 'pasang penangkal petir gedung',
+    'penangkal petir elektrostatis', 'penangkal petir konvensional',
+  ],
 };
 
 export default function RootLayout({ children }) {

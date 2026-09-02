@@ -43,7 +43,7 @@ export default async function DetailArtikelPage({ params }) {
         {/* Header Artikel (Judul & Info) */}
         <div className="mb-8 text-center md:text-left">
           <span className="border border-secondary text-secondary text-xs font-semibold px-3 py-1 mb-4 inline-block tracking-widest uppercase rounded-full">
-            Info Kanopi
+            Info Penangkal Petir
           </span>
           <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
             {article.title}
@@ -55,36 +55,35 @@ export default async function DetailArtikelPage({ params }) {
             </div>
             <div className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-              <span>Admin Buana Kanopi</span>
+              <span>Admin Tema Grounding Petir</span>
             </div>
           </div>
         </div>
 
         {/* Gambar Utama Artikel */}
-        <div
-          className="w-full h-64 md:h-[450px] bg-neutral-bg mb-10 bg-cover bg-center rounded-3xl"
-          style={{ backgroundImage: `url('${article.image}')` }}
-        ></div>
+        <div className="w-full h-64 md:h-[450px] mb-10 rounded-3xl overflow-hidden">
+          <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
+        </div>
 
         {/* Isi / Konten Artikel */}
-        <div className="bg-white p-6 md:p-10 border border-primary/10 rounded-3xl text-neutral-text/70 leading-relaxed prose prose-lg max-w-none">
+        <div className="bg-surface p-6 md:p-10 border border-primary/20 rounded-3xl text-neutral-text/70 leading-relaxed prose prose-lg max-w-none">
           <p className="text-lg font-medium text-primary mb-6">
             {article.excerpt}
           </p>
           <p className="mb-4">
-            Kanopi membrane adalah sistem peneduh atau struktur atap yang menggunakan material kain membran khusus dengan tingkat elastisitas, ketahanan, dan estetika yang sangat baik. Berbeda dari kanopi biasa yang memakai polycarbonate atau spandek, kanopi membrane menggunakan bahan sejenis kain sintetis premium seperti PVDF, PTFE, atau ETFE yang kuat dan mampu membentuk lengkungan artistik.
+            Penangkal petir adalah sistem proteksi yang menyalurkan arus sambaran petir dengan aman ke tanah melalui jalur konduktor, sehingga bangunan dan penghuninya terlindungi dari risiko kebakaran maupun kerusakan perangkat elektronik. Secara umum, sistem ini terbagi menjadi dua jenis: <strong>konvensional</strong> dan <strong>elektrostatis</strong>.
           </p>
-          <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Keunggulan Kanopi Membrane</h2>
+          <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Hal yang Perlu Diperhatikan</h2>
           <ul className="list-disc list-inside space-y-3 mb-6">
-            <li><strong>Desain Modern dan Mewah:</strong> Struktur membrane memungkinkan bentuk yang lebih beragam seperti melengkung, melipat, atau wave.</li>
-            <li><strong>Material Kuat dan Tahan Lama:</strong> Memiliki kekuatan tarik sangat tinggi, sehingga mampu menahan terpaan angin dan hujan deras. Tahan hingga 10-20 tahun.</li>
-            <li><strong>Perawatan Mudah:</strong> Tidak memerlukan perawatan rumit. Cukup membersihkan permukaan secara berkala.</li>
+            <li><strong>Jenis Sistem:</strong> Rumah dan bangunan kecil umumnya cukup dengan sistem konvensional, sementara gedung atau area luas lebih efisien dengan sistem elektrostatis yang mampu melindungi radius 40–150 meter dari 1 titik terminal.</li>
+            <li><strong>Sistem Grounding:</strong> Pembumian yang diuji dan diukur dengan benar (maksimal kedalaman 8 meter) adalah kunci agar arus petir tersalur dengan aman.</li>
+            <li><strong>Garansi & Tenaga Ahli:</strong> Pastikan produk bergaransi resmi dan dipasang oleh mekanik yang berpengalaman.</li>
           </ul>
           <p>
-            Permintaan instalasi kanopi atap membrane terus meningkat. CV. Buana Teknikal Pratama hadir sebagai penyedia jasa profesional yang telah berpengalaman sejak tahun 2000, melayani pemasangan kanopi membrane untuk instansi pemerintah, korporasi, hingga hunian pribadi di berbagai wilayah Indonesia dengan standar kualitas terbaik.
+            Tema Grounding Petir menyediakan penjualan dan pemasangan penangkal petir konvensional maupun elektrostatis, lengkap dengan free tes grounding, gratis jasa instalasi, dan garansi produk hingga 2 tahun.
           </p>
           <p className="mt-8 p-6 bg-neutral-bg border-l-2 border-secondary rounded-r-2xl italic text-primary font-medium">
-            "Jika Anda membutuhkan kanopi atap membrane yang kuat, elegan, dan dikerjakan oleh tenaga ahli berpengalaman, CV. Buana Teknikal Pratama adalah solusi terbaik untuk kebutuhan Anda."
+            &ldquo;Jika Anda membutuhkan penangkal petir yang aman, bergaransi, dan dikerjakan oleh mekanik berpengalaman, Tema Grounding Petir siap membantu kebutuhan Anda.&rdquo;
           </p>
         </div>
 

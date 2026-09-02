@@ -1,6 +1,6 @@
-# buana-canopy
+# tema-grounding-petir
 
-Website resmi CV. Buana Teknikal Pratama — jasa instalasi kanopi atap membrane dan kanopi alderon.
+Website resmi Tema Grounding Petir — jasa penjualan dan pemasangan penangkal petir konvensional & elektrostatis, terpercaya se-Indonesia.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

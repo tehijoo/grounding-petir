@@ -21,9 +21,9 @@ export default function KontakPage() {
       return;
     }
 
-    const targetWA = "6281222281917";
+    const targetWA = "6285694549518";
 
-    const textMessage = `Halo CV. Buana Teknikal Pratama,%0A%0ASaya ingin bertanya mengenai instalasi kanopi atap membrane. Berikut data diri saya:%0A%0A*Nama:* ${formData.nama}%0A*Email:* ${formData.email || '-' }%0A*No HP:* ${formData.phone}%0A*Pesan:* ${formData.pesan}%0A%0ATerima kasih.`;
+    const textMessage = `Halo Tema Grounding Petir,%0A%0ASaya ingin bertanya mengenai pemasangan penangkal petir. Berikut data diri saya:%0A%0A*Nama:* ${formData.nama}%0A*Email:* ${formData.email || '-' }%0A*No HP:* ${formData.phone}%0A*Pesan:* ${formData.pesan}%0A%0ATerima kasih.`;
 
     const waLink = `https://wa.me/${targetWA}?text=${textMessage}`;
 
@@ -40,7 +40,7 @@ export default function KontakPage() {
           <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Kontak</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Kontak Kami</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
-            Percayakan kebutuhan instalasi kanopi Anda kepada ahlinya. Kualitas, ketahanan, dan kerapian adalah prioritas kami.
+            Percayakan kebutuhan penangkal petir Anda kepada ahlinya. Keamanan, ketahanan, dan garansi resmi adalah prioritas kami.
           </p>
         </div>
       </section>
@@ -52,50 +52,44 @@ export default function KontakPage() {
           {/* Kolom Kiri: Informasi Kontak */}
           <div className="w-full lg:w-1/3 flex flex-col gap-4">
 
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Jl.+Matraman+Raya+No.+67,+Palmeriam,+Matraman,+Jakarta+Timur"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white border border-primary/10 rounded-2xl p-8 flex flex-col items-center text-center group hover:bg-primary hover:border-primary transition-colors duration-300"
-          >
-            <div className="w-12 h-12 text-secondary mb-4">
-              <svg className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-            </div>
-            <h3 className="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors">Alamat</h3>
-            <p className="text-neutral-text/60 group-hover:text-white/60 text-sm leading-relaxed transition-colors">
-              Jl. Matraman Raya No. 67, Palmeriam<br/>
-              Matraman, Jakarta Timur
-            </p>
-          </a>
-
-            <a href="https://wa.me/6281222281917" target="_blank" rel="noopener noreferrer" className="bg-white border border-primary/10 rounded-2xl p-8 flex flex-col items-center text-center group hover:bg-primary hover:border-primary transition-colors duration-300">
+            <a href="https://wa.me/6285694549518" target="_blank" rel="noopener noreferrer" className="bg-surface border border-primary/20 rounded-2xl p-8 flex flex-col items-center text-center group hover:bg-primary hover:border-primary hover:shadow-md transition-all duration-300">
               <div className="w-12 h-12 text-secondary mb-4">
                 <svg className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
               </div>
               <h3 className="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors">WhatsApp / Telepon</h3>
               <p className="text-secondary font-bold text-xl tracking-wide">
-                0812 2228 1917
+                0856 9454 9518
               </p>
-              <p className="text-neutral-text/40 group-hover:text-white/40 text-xs mt-1 transition-colors">atau telp: 0858 9430 7608</p>
+              <p className="text-neutral-text/40 group-hover:text-white/40 text-xs mt-1 transition-colors">Klik untuk chat langsung</p>
             </a>
 
-            <a href="mailto:buanapratama02@gmail.com" className="bg-white border border-primary/10 rounded-2xl p-8 flex flex-col items-center text-center group hover:bg-primary hover:border-primary transition-colors duration-300">
+            <div className="bg-surface border border-primary/20 hover:shadow-md rounded-2xl p-8 flex flex-col items-center text-center transition-shadow duration-300">
               <div className="w-12 h-12 text-secondary mb-4">
-                <svg className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <svg className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
-              <h3 className="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors">Email</h3>
-              <p className="text-neutral-text/60 group-hover:text-white/60 text-sm font-medium transition-colors">
-                buanapratama02@gmail.com
+              <h3 className="text-lg font-bold text-primary mb-2">Operator Ready 24 Jam</h3>
+              <p className="text-neutral-text/60 text-sm leading-relaxed">
+                Konsultasi dan pemesanan bisa dilayani kapan saja.
               </p>
-            </a>
+            </div>
+
+            <div className="bg-surface border border-primary/20 hover:shadow-md rounded-2xl p-8 flex flex-col items-center text-center transition-shadow duration-300">
+              <div className="w-12 h-12 text-secondary mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Area Layanan</h3>
+              <p className="text-neutral-text/60 text-sm leading-relaxed">
+                Se-Indonesia, fokus Jakarta, Bogor,<br/>Depok, Bekasi &amp; Banten
+              </p>
+            </div>
 
           </div>
 
           {/* Kolom Kanan: Form Kontak ke WA */}
-          <div className="w-full lg:w-2/3 bg-white border border-primary/10 rounded-2xl p-8 md:p-12">
+          <div className="w-full lg:w-2/3 bg-surface border border-primary/20 rounded-2xl p-8 md:p-12">
             <h2 className="text-3xl font-bold text-primary mb-2">Tinggalkan Pesan Disini</h2>
             <div className="h-1 w-16 bg-secondary mb-8"></div>
 
@@ -110,7 +104,7 @@ export default function KontakPage() {
                     value={formData.nama}
                     onChange={handleChange}
                     placeholder="Masukkan nama Anda"
-                    className="w-full bg-neutral-bg border border-primary/10 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300"
+                    className="w-full bg-neutral-bg border border-primary/20 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300"
                   />
                 </div>
 
@@ -122,7 +116,7 @@ export default function KontakPage() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Masukkan alamat email"
-                    className="w-full bg-neutral-bg border border-primary/10 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300"
+                    className="w-full bg-neutral-bg border border-primary/20 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300"
                   />
                 </div>
               </div>
@@ -135,7 +129,7 @@ export default function KontakPage() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Contoh: 0812xxxxxx"
-                  className="w-full bg-neutral-bg border border-primary/10 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300"
+                  className="w-full bg-neutral-bg border border-primary/20 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300"
                 />
               </div>
 
@@ -147,7 +141,7 @@ export default function KontakPage() {
                   value={formData.pesan}
                   onChange={handleChange}
                   placeholder="Tuliskan kebutuhan atau pertanyaan Anda di sini..."
-                  className="w-full bg-neutral-bg border border-primary/10 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300 resize-y"
+                  className="w-full bg-neutral-bg border border-primary/20 rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors duration-300 resize-y"
                 ></textarea>
               </div>
 
