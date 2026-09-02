@@ -1,10 +1,10 @@
 "use client";
 import ScrollReveal from "@/components/ScrollReveal";
 import Counter from "@/components/Counter";
+import LayananContent from "@/components/LayananContent";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
-import { Home as HomeIcon, Building2 } from "lucide-react";
 
 const tickerItems = [
   "Penangkal Petir Konvensional",
@@ -150,6 +150,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* --- LAYANAN & PAKET (lengkap, sama seperti halaman /layanan) --- */}
+      <LayananContent showIntro={false} />
+
       {/* --- AHLINYA PENANGKAL PETIR --- */}
       <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div className="lg:col-span-5">
@@ -214,75 +217,6 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* --- LAYANAN (2 Kartu) --- */}
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
-        <ScrollReveal direction="up">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-            <div>
-              <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-3">Layanan Kami</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">Penangkal Petir Konvensional &amp; Elektrostatis</h2>
-            </div>
-            <Link href="/layanan" className="link-underline text-primary font-semibold text-sm flex items-center gap-2 w-fit">
-              Semua Layanan
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </Link>
-          </div>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {[
-            {
-              tag: "01 · Untuk Rumah & Bangunan Kecil",
-              title: "Penangkal Petir Konvensional",
-              desc: "Sistem air terminal (splitzen) dengan kabel dan grounding, mulai dari paket 2 AIP. Solusi hemat untuk perlindungan area terbatas.",
-              points: ["Cocok untuk rumah tinggal, ruko, bangunan kecil", "Paket mulai dari Rp 2.000.000, gratis instalasi & garansi"],
-              icon: HomeIcon,
-              image: "/images/gallery/10.jpg",
-              href: "/layanan#konvensional",
-            },
-            {
-              tag: "02 · Untuk Gedung & Area Luas",
-              title: "Penangkal Petir Elektrostatis",
-              desc: "Radius perlindungan lebih luas (40–150 meter) hanya dengan 1 titik terminal, lebih efisien untuk bangunan bertingkat dan area komersial.",
-              points: ["Cocok untuk gedung, pabrik, dan area komersial", "Free tes grounding, gratis instalasi & garansi"],
-              icon: Building2,
-              image: "/images/gallery/8.jpg",
-              href: "/layanan#elektrostatis",
-            },
-          ].map((service, index) => (
-            <ScrollReveal direction="up" delay={index * 0.12} key={index}>
-              <Link href={service.href} className="group block border border-primary/20 hover:border-secondary hover:shadow-md rounded-2xl overflow-hidden transition-all duration-300 h-full">
-                <div className="h-60 overflow-hidden relative">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 via-primary-dark/0 to-transparent" />
-                  <div className="absolute bottom-4 left-4 z-10 bg-secondary text-primary-dark w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110">
-                    <service.icon size={26} />
-                  </div>
-                </div>
-                <div className="p-8">
-                  <p className="text-secondary font-semibold text-[11px] tracking-widest uppercase mb-3">{service.tag}</p>
-                  <h3 className="text-2xl font-bold text-primary mb-4">{service.title}</h3>
-                  <p className="text-neutral-text/70 text-sm leading-relaxed mb-5">{service.desc}</p>
-                  <ul className="space-y-2 mb-6 text-sm text-neutral-text/80">
-                    {service.points.map((point, i) => (
-                      <li key={i} className="flex items-start gap-2"><span className="text-secondary font-bold">＋</span> {point}</li>
-                    ))}
-                  </ul>
-                  <span className="text-primary group-hover:text-secondary font-semibold text-sm inline-flex items-center gap-2 transition-colors">
-                    Lihat Detail Layanan
-                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                  </span>
-                </div>
-              </Link>
-            </ScrollReveal>
-          ))}
         </div>
       </section>
 
