@@ -6,7 +6,7 @@ export const size = { width: 64, height: 64 }
 export const contentType = 'image/png'
 
 export default function Icon() {
-  const logo = readFileSync(join(process.cwd(), 'public', 'logo-3a-emblem-hijau.png'))
+  const logo = readFileSync(join(process.cwd(), 'public', 'logo-tgp.png'))
   const logoSrc = `data:image/png;base64,${logo.toString('base64')}`
 
   return new ImageResponse(
