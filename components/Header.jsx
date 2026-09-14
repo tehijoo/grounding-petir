@@ -26,7 +26,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <img
-            src="/logo.jpg"
+            src="/logo-3a-emblem-hijau.png"
             alt="Logo Tema Grounding Petir"
             className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border border-white/10 bg-white shrink-0"
           />
