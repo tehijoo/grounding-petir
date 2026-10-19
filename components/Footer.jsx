@@ -1,4 +1,5 @@
 import React from "react";
+import TehijooCredit from "@/components/TehijooCredit";
 
 export default function Footer() {
   return (
@@ -63,12 +64,15 @@ export default function Footer() {
             </svg>
             Melayani se-Indonesia, dengan fokus wilayah Jakarta, Bogor, Depok, Bekasi, dan Banten.
           </p>
-
-          <p className="text-[10px] text-white/30 mt-auto pt-8">
-            © {new Date().getFullYear()} Tema Grounding Petir. All Rights Reserved.
-          </p>
         </div>
 
+      </div>
+      {/* Baris bawah: copyright klien + kredit pengembang */}
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-12 relative z-10">
+        <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/90">
+          <p>© {new Date().getFullYear()} Tema Grounding Petir. All Rights Reserved.</p>
+          <TehijooCredit variant="text" from="Tema Grounding Petir" theme="dark" accent="#FFFFFF" />
+        </div>
       </div>
     </footer>
   );
